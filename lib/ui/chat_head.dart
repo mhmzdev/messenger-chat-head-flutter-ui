@@ -93,8 +93,8 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       body: GestureDetector(
-        onTap: _openChatHead,
         onVerticalDragUpdate: (DragUpdateDetails details) =>
             onDragUpdate(context, details),
         onHorizontalDragUpdate: (DragUpdateDetails details) =>
@@ -148,6 +148,7 @@ class _HomePageState extends State<HomePage> {
                 : SizedBox(),
             GestureDetector(
               key: _floatingKey,
+              onTap: _openChatHead,
               child: Container(
                 height: 70,
                 width: 70,

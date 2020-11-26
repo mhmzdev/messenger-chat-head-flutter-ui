@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/chatHeadAppBar.dart';
+import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadAppBar.dart';
+import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadBottom.dart';
 
 class ChatHeadBody extends StatelessWidget {
   @override
@@ -9,18 +10,19 @@ class ChatHeadBody extends StatelessWidget {
           0, MediaQuery.of(context).size.height * 0.02, 0, 0),
       height: MediaQuery.of(context).size.height * 0.8,
       width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black26,
-            blurRadius: 8.0,
-          )
-        ],
-      ),
-      child: Column(
-        children: [ChatHeadAppBar()],
+      child: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ChatHeadAppBar(),
+            Row(
+              children: [
+                BottomActionButton(),
+                Expanded(child: BottomTextField()),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
