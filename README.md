@@ -6,9 +6,9 @@ Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
 
 ## ⚡ Here's What its look like
   
-<img style="padding: 5px" src="https://user-images.githubusercontent.com/43790152/100321186-1d90a600-2fe4-11eb-9f30-7cdb98760473.jpg" height=500>
+<img src="https://user-images.githubusercontent.com/43790152/100321186-1d90a600-2fe4-11eb-9f30-7cdb98760473.jpg" height=500>
 
-<img style="padding: 5px" src="https://user-images.githubusercontent.com/43790152/100321225-297c6800-2fe4-11eb-8296-fcd8ad7542fb.jpg" height=500>
+<img src="https://user-images.githubusercontent.com/43790152/100321225-297c6800-2fe4-11eb-8296-fcd8ad7542fb.jpg" height=500>
 
 
 ## 📱 Demo
@@ -22,3 +22,5 @@ As far as I'm aware of what can be improved here:
 - `onDragEnd()` while exiting the Chat Head can be improved for better `Floating Location`
 - Inital `Floating Location` can be saved as the last `Floating Location` left by the users
 
+## 🔑 LICENSE
+- This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
