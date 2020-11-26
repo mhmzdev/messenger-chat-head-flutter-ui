@@ -25,6 +25,8 @@ Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
 ## 🔨 Issues
 
 As far as I'm aware of what can be improved here:
+
+- Make the Chat Head float even when the app is closed
 - Chat Messages List starts from the top, it must start from the bottom as in real Messenger
 - `onDragEnd()` while exiting the Chat Head can be improved for better `Floating Location`
 - Inital `Floating Location` can be saved as the last `Floating Location` left by the user
