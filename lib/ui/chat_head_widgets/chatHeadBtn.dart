@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 class ChatHeadBtn extends StatelessWidget {
   final IconData iconData;
   final double iconSize;
-  ChatHeadBtn({this.iconData, this.iconSize});
+  ChatHeadBtn(
+      {@required this.iconData,
+      @required this.iconSize,
+     });
   @override
   Widget build(BuildContext context) {
     return Container(

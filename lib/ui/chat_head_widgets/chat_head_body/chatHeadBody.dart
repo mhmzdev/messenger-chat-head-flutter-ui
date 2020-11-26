@@ -7,7 +7,7 @@ class ChatHeadBody extends StatelessWidget {
     return Container(
       margin: EdgeInsets.fromLTRB(
           0, MediaQuery.of(context).size.height * 0.02, 0, 0),
-      height: MediaQuery.of(context).size.height * 0.72,
+      height: MediaQuery.of(context).size.height * 0.8,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),

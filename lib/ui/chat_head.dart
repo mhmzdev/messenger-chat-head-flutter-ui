@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/chatHeadBody.dart';
+import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadBody.dart';
 import 'package:messenger_chat_head/ui/chat_head_widgets/chatHeadBtn.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   Size floatingSize;
 
   // Initial Location of Chat Head
-  Offset floatingLocation = Offset(0, 20);
+  Offset floatingLocation = Offset(0, 40);
 
   void getFloatingSize() async {
     RenderBox _floatingBox = _floatingKey.currentContext.findRenderObject();
@@ -78,10 +78,14 @@ class _HomePageState extends State<HomePage> {
   _openChatHead() {
     setState(() {
       chatHeadOpened = !chatHeadOpened;
+      // if ChatHead == Opened, it will be placed at top right of the screen alongside other widgets
       if (chatHeadOpened) {
-        floatingLocation = Offset(0, 20);
-      } else {
-        floatingLocation = Offset(MediaQuery.of(context).size.width * 0.8, 20);
+        floatingLocation = Offset(0, 40);
+      }
+      // if ChatHead == closed, it will align on right, same place where it opened on top right corner
+      else {
+        floatingLocation =
+            Offset(MediaQuery.of(context).size.width - floatingSize.width, 40);
       }
     });
   }
@@ -89,10 +93,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color(0xff4267B2),
-        title: Text("Messenger Chat Head Example"),
-      ),
       body: GestureDetector(
         onTap: _openChatHead,
         onVerticalDragUpdate: (DragUpdateDetails details) =>
@@ -105,6 +105,7 @@ class _HomePageState extends State<HomePage> {
             onDragEnd(context, details),
         child: Stack(
           children: [
+            CustomCenterWiget(),
             AnimatedPositioned(
               duration: Duration(milliseconds: 100),
               left: floatingLocation.dx,
@@ -168,6 +169,42 @@ class _HomePageState extends State<HomePage> {
         ),
         chatHeadOpened ? ChatHeadBody() : Container()
       ],
+    );
+  }
+}
+
+class CustomCenterWiget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            'assets/messenger.png',
+            height: 100,
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(children: [
+              TextSpan(
+                text: "Messenger",
+                style: TextStyle(
+                    color: Color(0xff0078FF),
+                    fontSize: 28,
+                    fontWeight: FontWeight.w500),
+              ),
+              TextSpan(
+                text: "\nChat Head UI",
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+            ]),
+          )
+        ],
+      ),
     );
   }
 }

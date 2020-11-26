@@ -9,13 +9,16 @@ class ChatHeadAppBar extends StatelessWidget {
       child: Card(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [chatHeadUserProfile(), chatHeadAppBarActions()],
+          children: [ChatHeadUserProfile(), ChatHeadAppBarActions()],
         ),
       ),
     );
   }
+}
 
-  Widget chatHeadUserProfile() {
+class ChatHeadUserProfile extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return FlatButton(
         padding: EdgeInsets.all(5.0),
         splashColor: Colors.transparent,
@@ -33,13 +36,31 @@ class ChatHeadAppBar extends StatelessWidget {
           ],
         ));
   }
+}
 
-  Widget chatHeadAppBarActions() {
+class ChatHeadAppBarActions extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return Row(
       children: [
-        IconButton(icon: Icon(Icons.phone), onPressed: () {}),
-        IconButton(icon: Icon(Icons.video_call), onPressed: () {}),
-        IconButton(icon: Icon(Icons.info), onPressed: () {}),
+        IconButton(
+            icon: Icon(
+              Icons.phone,
+              color: Color(0xffaa36f8),
+            ),
+            onPressed: () {}),
+        IconButton(
+            icon: Icon(
+              Icons.video_call,
+              color: Color(0xffaa36f8),
+            ),
+            onPressed: () {}),
+        IconButton(
+            icon: Icon(
+              Icons.info,
+              color: Color(0xffaa36f8),
+            ),
+            onPressed: () {}),
       ],
     );
   }
