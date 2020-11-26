@@ -18,36 +18,67 @@ class ChatHeadBottomBar extends StatelessWidget {
 }
 
 class BottomActionButton extends StatelessWidget {
+  // final List<Widget> _actionBtns = [
+  //   IconButton(
+  //       icon: Icon(
+  //         Icons.dashboard,
+  //         color: Color(0xff246bea),
+  //       ),
+  //       onPressed: () {}),
+  //   IconButton(
+  //       icon: Icon(
+  //         Icons.camera_alt,
+  //         color: Color(0xff246bea),
+  //       ),
+  //       onPressed: () {}),
+  //   IconButton(
+  //       icon: Icon(
+  //         Icons.image,
+  //         color: Color(0xff246bea),
+  //       ),
+  //       onPressed: () {}),
+  //   IconButton(
+  //       icon: Icon(
+  //         Icons.mic,
+  //         color: Color(0xff246bea),
+  //       ),
+  //       onPressed: () {}),
+  // ];
+
   final List<Widget> _actionBtns = [
-    IconButton(
-        icon: Icon(
-          Icons.dashboard,
-          color: Color(0xff246bea),
-        ),
-        onPressed: () {}),
-    IconButton(
-        icon: Icon(
-          Icons.camera_alt,
-          color: Color(0xff246bea),
-        ),
-        onPressed: () {}),
-    IconButton(
-        icon: Icon(
-          Icons.image,
-          color: Color(0xff246bea),
-        ),
-        onPressed: () {}),
-    IconButton(
-        icon: Icon(
-          Icons.mic,
-          color: Color(0xff246bea),
-        ),
-        onPressed: () {}),
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Icon(
+        Icons.dashboard,
+        color: Color(0xff246bea),
+      ),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Icon(
+        Icons.camera_alt,
+        color: Color(0xff246bea),
+      ),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Icon(
+        Icons.image,
+        color: Color(0xff246bea),
+      ),
+    ),
+    Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Icon(
+        Icons.mic,
+        color: Color(0xff246bea),
+      ),
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Row(      
       children: _actionBtns,
     );
   }
@@ -59,7 +90,7 @@ class BottomTextField extends StatelessWidget {
     return SizedBox(
       height: 40,
       child: Material(
-        color: Colors.white,
+        color: Colors.transparent,
         child: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 12.0),
@@ -68,7 +99,7 @@ class BottomTextField extends StatelessWidget {
                 Expanded(
                   child: TextField(
                     decoration: InputDecoration(
-                        fillColor: Colors.grey[100],
+                        fillColor: Colors.grey[200].withAlpha(200),
                         filled: true,
                         suffixIcon: Icon(
                           Icons.emoji_emotions,
