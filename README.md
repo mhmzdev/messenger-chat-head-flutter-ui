@@ -30,6 +30,8 @@ As far as I'm aware of what can be improved here:
 - Inital `Floating Location` can be saved as the last `Floating Location` left by the user
 - Appearing of Chat Head body can also be imporoved
 
+Feel free to open an issue and contribute 🔥
+
 ## 🔑 LICENSE
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
