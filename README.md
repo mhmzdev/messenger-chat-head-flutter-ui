@@ -1,13 +1,17 @@
-# Messenger Chat Head
+<h1 align="center" style="font-size: 48px;" ><img height=35 src="https://user-images.githubusercontent.com/43790152/100322546-40bc5500-2fe6-11eb-896c-06b1ceb3c3e2.png"> Messenger Chat Head</h1>
 
-Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
-
-🔴 *Issues are reported in the bottom of README, feel free to contribute :)*
+<div align="center">
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#)
 [![GitHub Forks](https://img.shields.io/github/forks/saadhaxxan/Car_Game_Python_Pygame.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/m-hamzashakeel/FB-Messenger-Chat-Head-Flutter-UI/fork)
 [![GitHub Issues](https://img.shields.io/github/issues/saadhaxxan/Car_Game_Python_Pygame.svg?style=flat&label=Issues&maxAge=2592000)](https://github.com/m-hamzashakeel/FB-Messenger-Chat-Head-Flutter-UI/issues)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black	)](#)
+
+</div>
+
+Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
+
+🔴 *Issues are reported in the bottom of README, feel free to contribute :)*
 
 ## 👀 Here's the Look
 
