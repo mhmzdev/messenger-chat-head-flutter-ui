@@ -5,10 +5,9 @@ Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
 🔴 *Issues are reported in the bottom of README, feel free to contribute :)*
 
 ## ⚡ Here's What its look like
-  
-<img src="https://user-images.githubusercontent.com/43790152/100321186-1d90a600-2fe4-11eb-9f30-7cdb98760473.jpg" height=500>
 
-<img src="https://user-images.githubusercontent.com/43790152/100321225-297c6800-2fe4-11eb-8296-fcd8ad7542fb.jpg" height=500>
+<img src="https://user-images.githubusercontent.com/43790152/100321186-1d90a600-2fe4-11eb-9f30-7cdb98760473.jpg" height=450>
+<img src="https://user-images.githubusercontent.com/43790152/100321225-297c6800-2fe4-11eb-8296-fcd8ad7542fb.jpg" height=450>
 
 
 ## 📱 Demo
