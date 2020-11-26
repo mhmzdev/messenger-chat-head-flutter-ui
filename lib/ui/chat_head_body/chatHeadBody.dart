@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadBottom.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatListView.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/widgets/chatHeadAppBar.dart';
+import 'package:messenger_chat_head/ui/chat_head_body/chatHeadBottom.dart';
+import 'package:messenger_chat_head/ui/chat_head_body/chatListView.dart';
+import 'package:messenger_chat_head/ui/widgets/chatHeadAppBar.dart';
 
 class ChatHeadBody extends StatelessWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadBody.dart';
-import 'package:messenger_chat_head/ui/chat_head_widgets/widgets/chatHeadBtn.dart';
+import 'package:messenger_chat_head/ui/chat_head_body/chatHeadBody.dart';
+import 'package:messenger_chat_head/ui/widgets/chatHeadBtn.dart';
 
 class HomePage extends StatefulWidget {
   @override
