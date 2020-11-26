@@ -1,4 +1,4 @@
-<h1 align="center" style="font-size: 48px;" ><img height=35 src="https://user-images.githubusercontent.com/43790152/100322546-40bc5500-2fe6-11eb-896c-06b1ceb3c3e2.png"> Messenger Chat Head</h1>
+<h1 align="center" style="font-size: 52px;" ><img height=35 src="https://user-images.githubusercontent.com/43790152/100322546-40bc5500-2fe6-11eb-896c-06b1ceb3c3e2.png"> Messenger Chat Head</h1>
 
 <div align="center">
 
@@ -11,7 +11,7 @@
 
 Tried to clone the famous Chat Heads by Facebook Messenger using Flutter.
 
-🔴 *Issues are reported in the bottom of README, feel free to contribute :)*
+`🔴 Issues are reported in the bottom of README, feel free to contribute :)`
 
 ## 👀 Here's the Look
 
@@ -28,6 +28,7 @@ As far as I'm aware of what can be improved here:
 - Chat Messages List starts from the top, it must start from the bottom as in real Messenger
 - `onDragEnd()` while exiting the Chat Head can be improved for better `Floating Location`
 - Inital `Floating Location` can be saved as the last `Floating Location` left by the user
+- Appearing of Chat Head body can also be imporoved
 
 ## 🔑 LICENSE
 - This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
