@@ -22,25 +22,25 @@ class BottomActionButton extends StatelessWidget {
     IconButton(
         icon: Icon(
           Icons.dashboard,
-          color: Color(0xff4a6afe),
+          color: Color(0xff246bea),
         ),
         onPressed: () {}),
     IconButton(
         icon: Icon(
           Icons.camera_alt,
-          color: Color(0xff4a6afe),
+          color: Color(0xff246bea),
         ),
         onPressed: () {}),
     IconButton(
         icon: Icon(
           Icons.image,
-          color: Color(0xff4a6afe),
+          color: Color(0xff246bea),
         ),
         onPressed: () {}),
     IconButton(
         icon: Icon(
           Icons.mic,
-          color: Color(0xff4a6afe),
+          color: Color(0xff246bea),
         ),
         onPressed: () {}),
   ];

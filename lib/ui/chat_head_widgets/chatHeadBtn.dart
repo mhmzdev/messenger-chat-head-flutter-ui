@@ -17,8 +17,8 @@ class ChatHeadBtn extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black26,
-              blurRadius: 8.0,
+              color: Colors.black12,
+              blurRadius: 10.0              
             )
           ]),
       child: Icon(

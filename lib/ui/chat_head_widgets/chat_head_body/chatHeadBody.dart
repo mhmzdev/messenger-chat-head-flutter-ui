@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadAppBar.dart';
 import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatHeadBottom.dart';
+import 'package:messenger_chat_head/ui/chat_head_widgets/chat_head_body/chatListView.dart';
 
 class ChatHeadBody extends StatelessWidget {
   @override
@@ -15,6 +16,7 @@ class ChatHeadBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             ChatHeadAppBar(),
+            Expanded(child: ChatListView()),
             Row(
               children: [
                 BottomActionButton(),
